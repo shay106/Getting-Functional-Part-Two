@@ -25,11 +25,24 @@ then?
 */
 
 
-function oldestCustomer(array){
+function oldestCustomer(array) {
+  var ageComp = 0;
+  var name;
+
+for(var i = 0; i <= array.length - 1; i++){
 
 
+
+if(array[i].age >= ageComp){
+//reassigning ageComp value to current age iteration
+  ageComp = array[i].age
+  name = array[i].name
+  }
+}
+
+ return name;
 };
-
+console.log(oldestCustomer(customers))
 
 
 /*
@@ -49,7 +62,22 @@ then?
 
 */
 
-function youngestCustomer(array){
 
+function youngestCustomer(array) {
+  var ageComp = 0;
+  var name;
+
+for(var i = 0; i <= array.length - 1; i++){
+
+
+
+if(array[i].age >= ageComp){
+//reassigning ageComp value to current age iteration
+  ageComp = array[i].age
+  name = array[i].name
+  }
+}
+
+ return name;
 };
-
+console.log(youngestCustomer(customers))
